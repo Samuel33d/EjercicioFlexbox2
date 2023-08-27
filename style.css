@@ -48,7 +48,16 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
+    padding-right: 10%;
     border-top: 1px var(--border-color) solid;
+}
+
+#nav--icon{
+    display: none;
+}
+
+#nav--icon-ms{
+    display: none;
 }
 
 
@@ -77,6 +86,15 @@ body{
         gap: 1rem;
         border: none;
         flex-grow: 1;
+        padding: 0;
+    }
+
+    #nav--icon{
+        display: block;
+    }
+    
+    #nav--icon-ms{
+        display: block;
     }
 
     .nav__button{
@@ -93,6 +111,9 @@ body{
         transition: transform 0.3s;
     }
 
+    .nav__menu--messenger, .nav__menu--inicio{
+        display: block;
+    }
 }
 
 @media (min-width: 900px) {
