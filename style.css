@@ -46,7 +46,7 @@ body{
 
 .nav__menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1rem;
     padding-right: 10%;
     border-top: 1px var(--border-color) solid;
@@ -86,7 +86,7 @@ body{
         gap: 1rem;
         border: none;
         flex-grow: 1;
-        padding: 0;
+        padding: 1rem;
     }
 
     #nav--icon{
@@ -120,6 +120,7 @@ body{
 
     .navbar{
         justify-content: flex-start;
+        padding-right: 2rem;
     }
 
     .nav__logo .isologo{
@@ -162,6 +163,11 @@ body{
     }
 
     .nav__menu--icon:hover span{
+        text-decoration: underline;
+    }
+
+    .nav__button:hover, .nav__button:hover span{
+        cursor: pointer;
         text-decoration: underline;
     }
 }
